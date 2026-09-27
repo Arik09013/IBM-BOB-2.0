@@ -1,0 +1,13 @@
+{
+  "benchmark_id": "bench-python-simple",
+  "description": "Python simple calculator benchmark with intentional coverage gap in converter.py",
+  "repository_path": "benchmarks/repositories/python_simple",
+  "language": "python",
+  "test_framework": "pytest",
+  "llm_provider": "ollama",
+  "llm_model": "codellama",
+  "max_repair_iterations": 2,
+  "approach": "multi",
+  "testpilot_version": "0.1.0",
+  "notes": "Target: src/calculator/converter.py"
+}

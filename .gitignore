@@ -1,0 +1,121 @@
+# =============================================================================
+# Secrets & credentials — NEVER commit these
+# =============================================================================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.p12
+*_secret*
+*_credentials*
+
+# =============================================================================
+# Python
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-link
+MANIFEST
+.installed.cfg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env/
+.venv*/
+
+# Distribution / packaging
+.Python
+develop-eggs/
+lib/
+lib64/
+.eggs/
+
+# =============================================================================
+# Testing & coverage
+# =============================================================================
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+nosetests.xml
+test-results/
+junit*.xml
+
+# =============================================================================
+# Type checking
+# =============================================================================
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+.pyre/
+
+# =============================================================================
+# Linting & formatting
+# =============================================================================
+.ruff_cache/
+
+# =============================================================================
+# TestPilot AI — generated artifacts (do NOT commit run outputs)
+# =============================================================================
+generated_tests/
+session_logs/
+benchmarks/results/*.jsonl
+benchmarks/results/*.json
+benchmarks/results/*.csv
+repair_patches/
+.tmp/
+tmp/
+
+# =============================================================================
+# IDE / editor local files
+# =============================================================================
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+*.swp
+*.swo
+
+# =============================================================================
+# OS
+# =============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# =============================================================================
+# Node (if JS benchmark repos include node_modules)
+# =============================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

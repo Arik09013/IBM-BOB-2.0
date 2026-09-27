@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calculator"
+version = "0.1.0"
+description = "TestPilot AI benchmark: simple calculator library"
+requires-python = ">=3.11"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0", "pytest-cov>=5.0.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v"
+
+[tool.setuptools.packages.find]
+where = ["src"]
